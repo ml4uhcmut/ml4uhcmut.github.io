@@ -41,19 +41,10 @@ Dr. Nguyen Duc Dung leads a Machine Learning group at Ho Chi Minh City Universit
 
 {% endcapture %}
 
-<!-- {% capture col2 %}
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
+{% include cols.html col1=col1%}
 
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% include section.html dark=true %} -->
+{% include section.html dark=true %}
 
 {% capture col1 %}
 The predecessor was the ML4U group, active since 2020
