@@ -1,1 +1,1 @@
-Sitemap: https://greenelab.github.io/lab-website-template/sitemap.xml
+Sitemap: https://ml4uhcmut.github.io/sitemap.xml
