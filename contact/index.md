@@ -7,9 +7,8 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Dr. Nguyen Duc Dung leads a Machine Learning group at Ho Chi Minh City University of Technology (HCMUT), focusing on cutting-edge research in artificial intelligence and data science. The group specializes in developing novel algorithms and models in areas such as deep learning, natural language processing, and computer vision, with applications spanning various industries. They emphasize both theoretical advancements and real-world implementations, fostering collaboration with academia and industry to address practical challenges through machine learning innovations. The group actively publishes research and engages in projects to advance the field.
 
 {%
   include button.html
