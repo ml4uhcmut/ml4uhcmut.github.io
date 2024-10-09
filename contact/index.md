@@ -60,4 +60,4 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 The predecessor was the ML4U group, active since 2020
 {% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
+{% include cols.html col1=col1%}
