@@ -6,6 +6,7 @@ role: alumni
 aliases:
   - Nguyen Tan Dat
   - Dat T. Nguyen
+  - Tan Dat Nguyen
 affiliation: Korea Advanced Institute of Science and Technology
 links:
   email: tandat.kaist@kaist.ac.kr
