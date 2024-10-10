@@ -3,6 +3,9 @@ name: Tan Dat Nguyen
 image: images/tandatnguyen.jpg
 description: Graduated in 2022
 role: alumni
+aliases:
+  - Nguyen Tan Dat
+  - Dat T. Nguyen
 affiliation: Korea Advanced Institute of Science and Technology
 links:
   email: tandat.kaist@kaist.ac.kr
