@@ -182,27 +182,11 @@
   - Casey S. Greene
   - Anthony Gitter
   publisher: PLOS Computational Biology
-  date: '2020-12-04'
+  date: '2019-06-24'
   link: https://doi.org/c7np
   orcid: 0000-0002-4655-3773
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/573782
   title: Sequential compression of gene expression across dimensionalities and methods
     reveals no single best method or dimensionality
@@ -218,30 +202,49 @@
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+- id: doi:10.1007/978-3-030-98015-3_10
+  title: "Instance-Based Transfer Learning Approach for\_Vietnamese Speech Synthesis\
+    \ with\_Very Low Resource"
   authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  - Tuong Q. Lam
+  - Dung D. Nguyen
+  - Dat T. Nguyen
+  - "Han\_K. Lam"
+  - "Thuc\_H. Cai"
+  - Suong N. Hoang
+  - Hao D. Do
+  publisher: Lecture Notes in Networks and Systems
+  date: '2022-01-01'
+  link: https://doi.org/g7wkt9
+  image: https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-98015-3_10/MediaObjects/518004_1_En_10_Fig2_HTML.png?as=webp
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+- id: doi:10.1007/978-3-030-97610-1_6
+  title: 'Calib-StyleSpeech: A Zero-Shot Approach in Voice Cloning of High Adaptive
+    Text to Speech System with Imbalanced Dataset'
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+  - Nguyen Tan Dat
+  - Lam Quang Tuong
+  - Nguyen Duc Dung
+  publisher: Lecture Notes on Data Engineering and Communications Technologies
+  date: '2022-01-01'
+  link: https://doi.org/g7wkvf
+  image: https://signofthefour.github.io/images/CalibStyelSpeech.png
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/NICS56915.2022.10013451
+  title: A Linguistic-based Transfer Learning Approach for Low-resource Bahnar Text-to-Speech
+  authors:
+  - Tan Dat Nguyen
+  - Quang Tuong Lam
+  - Duc Hao Do
+  - Huu Thuc Cai
+  - Hoang Suong Nguyen
+  - Thanh Hung Vo
+  - Duc Dung Nguyen
+  publisher: 2022 9th NAFOSTED Conference on Information and Computer Science (NICS)
+  date: '2022-10-31'
+  link: https://doi.org/g7wkvp
+  image: https://signofthefour.github.io/images/bahnar.png
   plugin: sources.py
   file: sources.yaml
