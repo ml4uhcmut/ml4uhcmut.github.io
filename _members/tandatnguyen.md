@@ -23,4 +23,4 @@ From March 2023, I work at Multimodal AI Lab under the supervision of [Prof. Joo
 
 I am now working on TTS, audio generation, and interest in modern generative models. If you are seeking any form of academic cooperation, please feel free to email me at tandat.kaist@kaist.ac.kr.
 
-In 2022, I graduated from Department of Computer Science and Engineering, Ho Chi Minh University of Technology - Vietnam National University with a bachelor’s degree of Computer Science advised by Dr. Duc Dung Nguyen.
+In 2022, I graduated from Department of Computer Science and Engineering, Ho Chi Minh City University of Technology (HCMUT) - VNUHCM with a bachelor’s degree of Computer Science advised by Dr. Duc Dung Nguyen.
