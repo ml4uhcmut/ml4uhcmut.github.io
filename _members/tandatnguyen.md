@@ -10,8 +10,7 @@ links:
   google-scholar: 4Yr_icEAAAAJ&hl=en
   facebook: softdat
   linkedin: dat-nguyen-017824174
-  links:
-    - home-page: https://signofthefour.github.io
+  home-page: https://signofthefour.github.io
 ---
 
 I currently study in KAIST EE as a Master student.
