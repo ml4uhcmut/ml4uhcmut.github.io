@@ -9,3 +9,15 @@
 
 - id: doi:10.48550/ARXIV.2410.00527
   image: https://github-production-user-asset-6210df.s3.amazonaws.com/89628846/375956954-df3ab75f-97ff-45ea-9129-7befe770b691.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241012%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241012T122323Z&X-Amz-Expires=300&X-Amz-Signature=83b68e1aaada5fc99800eac0c3f94859fd4ecf4e0713268db7ea82e70f5f8510&X-Amz-SignedHeaders=host
+
+- id: doi:10.1109/cvpr52729.2023.02146
+  image: https://vinairesearch.github.io/CREPS/assets/teaser.png
+
+- id: doi:10.1109/iccv51070.2023.00202
+  image: https://vinairesearch.github.io/Anti-DreamBooth/Anti_DreamBooth_files/teaser_static.jpg
+
+- id: doi:10.1109/CVPR52733.2024.00746
+  image: https://github.com/VinAIResearch/SwiftBrush/raw/main/assets/teaser2-1.png
+
+- id: doi:10.1007/978-3-031-73007-8_11
+  image: https://vinairesearch.github.io/SwiftBrushV2/static/banner_v2.png
