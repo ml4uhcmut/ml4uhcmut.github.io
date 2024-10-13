@@ -7,6 +7,7 @@ from importlib import import_module
 from pathlib import Path
 from dotenv import load_dotenv
 from util import *
+from cite_arxiv import load_arxiv_cite
 
 
 # load environment variables
@@ -165,6 +166,12 @@ for index, source in enumerate(sources):
     # add new citation to list
     citations.append(citation)
 
+print('load source from arxiv')
+# load arxiv sources
+arxiv_cite = load_arxiv_cite()
+for idx, citation in enumerate(arxiv_cite):
+    print(f"Processing arxiv source {idx + 1} of {len(arxiv_cite)}")
+    citations.append(citation)
 
 log()
 
