@@ -101,3 +101,18 @@
   image: https://vinairesearch.github.io/SwiftBrushV2/static/banner_v2.png
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.48550/ARXIV.2410.00527
+  title: 'Wanna Hear Your Voice: Adaptive, Effective, and Language-Agnostic Approach
+    in Voice Extraction'
+  authors:
+  - The Hieu Pham
+  - Phuong Thanh Tran Nguyen
+  - Xuan Tho Nguyen
+  - Tan Dat Nguyen
+  - Duc Dung Nguyen
+  date: '2024-10-03'
+  link: https://arxiv.org/pdf/2410.00527
+  image: https://github.com/hieugiaosu/WHYV/blob/main/architecture.png
+  plugin: cite_arxiv.py
+  file: arxivSources.yaml
+  publisher: Arxiv Preprint
