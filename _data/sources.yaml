@@ -7,9 +7,6 @@
 - id: doi:10.1109/NICS56915.2022.10013451
   image: https://signofthefour.github.io/images/bahnar.png
 
-- id: doi:10.48550/ARXIV.2410.00527
-  image: https://github.com/hieugiaosu/WHYV/blob/main/architecture.png
-
 - id: doi:10.1109/cvpr52729.2023.02146
   image: https://vinairesearch.github.io/CREPS/assets/teaser.png
 
