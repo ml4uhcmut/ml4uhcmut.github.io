@@ -61,3 +61,58 @@
   image: https://github-production-user-asset-6210df.s3.amazonaws.com/89628846/375956954-df3ab75f-97ff-45ea-9129-7befe770b691.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241012%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241012T122323Z&X-Amz-Expires=300&X-Amz-Signature=83b68e1aaada5fc99800eac0c3f94859fd4ecf4e0713268db7ea82e70f5f8510&X-Amz-SignedHeaders=host
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.1109/cvpr52729.2023.02146
+  title: Efficient Scale-Invariant Generator with Column-Row Entangled Pixel Synthesis
+  authors:
+  - Thuan Hoang Nguyen
+  - Thanh Van Le
+  - Anh Tran
+  publisher: 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2023-06-01'
+  link: https://doi.org/g792d8
+  image: https://vinairesearch.github.io/CREPS/assets/teaser.png
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/iccv51070.2023.00202
+  title: 'Anti-DreamBooth: Protecting users from personalized text-to-image synthesis'
+  authors:
+  - Thanh Van Le
+  - Hao Phung
+  - Thuan Hoang Nguyen
+  - Quan Dao
+  - Ngoc N. Tran
+  - Anh Tran
+  publisher: 2023 IEEE/CVF International Conference on Computer Vision (ICCV)
+  date: '2023-10-01'
+  link: https://doi.org/g72dmd
+  image: https://vinairesearch.github.io/Anti-DreamBooth/Anti_DreamBooth_files/teaser_static.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/CVPR52733.2024.00746
+  title: 'SwiftBrush: One-Step Text-to-Image Diffusion Model with Variational Score
+    Distillation'
+  authors:
+  - Thuan Hoang Nguyen
+  - Anh Tran
+  publisher: 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2024-06-16'
+  link: https://doi.org/g792fc
+  image: https://github.com/VinAIResearch/SwiftBrush/raw/main/assets/teaser2-1.png
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-3-031-73007-8_11
+  title: 'SwiftBrush V2: Make Your One-Step Diffusion Model Better Than Its Teacher'
+  authors:
+  - Trung Dao
+  - Thuan Hoang Nguyen
+  - Thanh Le
+  - Duc Vu
+  - Khoi Nguyen
+  - Cuong Pham
+  - Anh Tran
+  publisher: Lecture Notes in Computer Science
+  date: '2024-10-01'
+  link: https://doi.org/g792ff
+  image: https://vinairesearch.github.io/SwiftBrushV2/static/banner_v2.png
+  plugin: sources.py
+  file: sources.yaml
