@@ -9,6 +9,7 @@
   date: "2024-10-03"
   link: https://arxiv.org/pdf/2410.00527
   image: https://arxiv.org/html/2410.00527v2/x1.png
+
 - id: doi:10.48550/arXiv.2408.11559
   title: "Semi-supervised 3D Semantic Scene Completion with 2D Vision Foundation Model Guidance"
   authors:
