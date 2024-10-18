@@ -19,8 +19,8 @@ Dr. Nguyen Duc Dung leads a Machine Learning group at Ho Chi Minh City Universit
 {%
   include button.html
   type="phone"
-  text="(+84) 555 555 555"
-  link="(+84) 555 555 555"
+  text="please email me first"
+  link="nddunga3@gmail.com"
 %}
 {%
   include button.html
