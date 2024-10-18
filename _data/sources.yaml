@@ -7,17 +7,17 @@
 - id: doi:10.1109/NICS56915.2022.10013451
   image: https://signofthefour.github.io/images/bahnar.png
 
-- id: doi:10.1109/cvpr52729.2023.02146
-  image: https://vinairesearch.github.io/CREPS/assets/teaser.png
+#- id: doi:10.1109/cvpr52729.2023.02146
+#  image: https://vinairesearch.github.io/CREPS/assets/teaser.png
 
-- id: doi:10.1109/iccv51070.2023.00202
-  image: https://vinairesearch.github.io/Anti-DreamBooth/Anti_DreamBooth_files/teaser_static.jpg
+#- id: doi:10.1109/iccv51070.2023.00202
+#  image: https://vinairesearch.github.io/Anti-DreamBooth/Anti_DreamBooth_files/teaser_static.jpg
 
-- id: doi:10.1109/CVPR52733.2024.00746
-  image: https://github.com/VinAIResearch/SwiftBrush/raw/main/assets/teaser2-1.png
+#- id: doi:10.1109/CVPR52733.2024.00746
+#  image: https://github.com/VinAIResearch/SwiftBrush/raw/main/assets/teaser2-1.png
 
-- id: doi:10.1007/978-3-031-73007-8_11
-  image: https://vinairesearch.github.io/SwiftBrushV2/static/banner_v2.png
+#- id: doi:10.1007/978-3-031-73007-8_11
+#  image: https://vinairesearch.github.io/SwiftBrushV2/static/banner_v2.png
 
 
 - id: doi:10.7717/peerj-cs.686
@@ -72,8 +72,6 @@
 - id: doi:10.1109/RIVF60135.2023.10471769
 
 - id: doi:10.1109/NICS56915.2022.10013370
-
-- id: doi:10.1109/NICS56915.2022.10013451
 
 - id: doi:10.1109/CACML55074.2022.00040
 
