@@ -11,8 +11,16 @@ Here are some of our remakable members:
 
 {% include section.html %}
 
+Principle Investigator:
+
 {% include list.html data="members" component="portrait" filters="role: pi" %}
+
+Alumni:
+
 {% include list.html data="members" component="portrait" filters="role: alumni" %}
+
+Team members:
+
 {% include list.html data="members" component="portrait" filters="role: ^(?!pi$)(?!alumni$).*" %}
 
 {% include section.html background="images/background.jpg" dark=true %}
