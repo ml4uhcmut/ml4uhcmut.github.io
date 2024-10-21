@@ -19,7 +19,6 @@
 #- id: doi:10.1007/978-3-031-73007-8_11
 #  image: https://vinairesearch.github.io/SwiftBrushV2/static/banner_v2.png
 
-
 - id: doi:10.7717/peerj-cs.686
   image: https://dfzljdn9uc3pi.cloudfront.net/2021/cs-686/1/fig-2-2x.jpg
 
@@ -65,8 +64,6 @@
 
 - id: doi:10.1109/ISITIA63062.2024.10667820
 
-- id: doi:10.1109/RIVF60135.2023.10471783
-
 - id: doi:10.1109/RIVF60135.2023.10471862
 
 - id: doi:10.1109/RIVF60135.2023.10471769
@@ -107,3 +104,5 @@
 
 - id: doi:10.1109/ROBIO.2009.4913024
 
+- id: doi:10.1109/RIVF60135.2023.10471783
+  image: https://github.com/thamquocdung/eCMU/blob/main/static/eCMU.png
