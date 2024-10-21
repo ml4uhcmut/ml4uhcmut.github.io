@@ -293,18 +293,6 @@
   link: https://doi.org/g8mj5b
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1109/RIVF60135.2023.10471783
-  title: 'eCMU: An Efficient Phase-aware Framework for Music Source Separation with
-    Conformer'
-  authors:
-  - Quoc Dung Tham
-  - Duc Dung Nguyen
-  publisher: 2023 RIVF International Conference on Computing and Communication Technologies
-    (RIVF)
-  date: '2023-12-23'
-  link: https://doi.org/g8mj5c
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1109/RIVF60135.2023.10471862
   title: 'MonoVINI: Seeing in the Dark with Virtual-World Supervision'
   authors:
@@ -551,6 +539,19 @@
   publisher: 2008 IEEE International Conference on Robotics and Biomimetics
   date: '2009-02-01'
   link: https://doi.org/fkk3dk
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/RIVF60135.2023.10471783
+  title: 'eCMU: An Efficient Phase-aware Framework for Music Source Separation with
+    Conformer'
+  authors:
+  - Quoc Dung Tham
+  - Duc Dung Nguyen
+  publisher: 2023 RIVF International Conference on Computing and Communication Technologies
+    (RIVF)
+  date: '2023-12-23'
+  link: https://doi.org/g8mj5c
+  image: https://github.com/thamquocdung/eCMU/blob/main/static/eCMU.png
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/ARXIV.2410.00527
