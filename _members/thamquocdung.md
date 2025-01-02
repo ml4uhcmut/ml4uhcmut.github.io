@@ -1,12 +1,12 @@
 ---
 name: Thẩm Quốc Dũng
 image: images/ThamQuocDung - Dũng Thẩm.jpg
-description: I am a senior AI Engineer with over five years of experience developing AI solutions in the industry. My research topics include Audio Source Separation, Text-to-Speech, and Generative AI.
+description: Senior AI Engineer, working in Audio Source Separation, Text-to-Speech, and Generative AI.
 role: alumni
 aliases:
  - Quoc Dung Tham
  - Quoc-Dung Tham
-affiliation: Computer Science and Engineering Faculty - Ho Chi Minh City University of Technology (HCMUT), VNU-HCM
+affiliation: Ho Chi Minh City University of Technology (HCMUT), VNU-HCM
 links:
  email: thamquocdung@gmail.com
  linkedin: dungtham
