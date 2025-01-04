@@ -32,16 +32,17 @@
   subtitle: Self-supervise and Beyond
   image: images/photo.jpg
 #  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Self-supervised monocular depth estimation (MDE) has garnered considerable interest due to its promising performance, particularly in well-lit, daytime settings. In this work, we investigate several complementary strategies to advance the state of the art in MDE. We explored a meta-learning approach to train a model capable of rapid adaptation to novel environments. Also, we addressed the challenges posed by low-light conditions to improve performance in dark scenes. In addition, we employed multi-task learning to enhance the overall quality of the estimated depth maps.
+  #Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 #  repo: greenelab/lab-website-template
   tags:
     - software
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+#- title: Cool Web Server
+#  subtitle: a subtitle
+#  image: images/photo.jpg
+#  link: https://github.com/
+#  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#  repo: greenelab/lab-website-template
+#  tags:
+#    - software
