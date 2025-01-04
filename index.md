@@ -28,7 +28,8 @@ By providing a supportive environment for AI research, the AITech Lab is poised 
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<!-- TODO: Write better description -->
+Our research varies along fields of AI from Robostic, Vision, NLP, to Speech Processing.
 
 {%
   include button.html
@@ -41,9 +42,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% endcapture %}
 
+<!-- TODO: Change Image -->
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/MIWAI19-TTS.png"
   link="research"
   title="Our Research"
   text=text
@@ -51,7 +53,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<!-- TODO: Write better description -->
+We contribute to the community many opensource
 
 {%
   include button.html
@@ -64,9 +67,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% endcapture %}
 
+<!-- TODO: Change Image -->
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/IEEEAccess-F2SRGAN.png"
   link="projects"
   title="Our Projects"
   flip=true
@@ -76,7 +80,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<!-- TODO: Write better description -->
+We are a team of HCMUT. We welcome you to Collaborating, Joining Us, and Visit us at _Address_
 
 {%
   include button.html
@@ -91,7 +96,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/hcmut.jpg"
   link="team"
   title="Our Team"
   text=text
