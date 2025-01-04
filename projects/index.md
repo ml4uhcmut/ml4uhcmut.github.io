@@ -17,10 +17,10 @@ Some interesting projects that we have been working on right now.
 
 ## Featured
 
-{% include list.html component="card" data="projects" filters="group: featured" %}
+{% include list.html component="post-excerpt" data="projects" filters="group: featured" %}
 
 {% include section.html %}
 
 ## More
 
-{% include list.html component="post-excerpt" data="projects" filters="group: "%}
+{% include list.html component="post-excerpt" data="projects" filters="group: featured"%}
