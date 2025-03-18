@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bubble {
+  animation: float 2s ease-out both infinite var(--delay);
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+
+.cornered:before {
+  content:'';
+  overflow: hidden;
+  position:absolute;
+  width:44px;
+  height:44px;
+  top:-22px;
+  right:-22px;
+  border-radius:100%;
+  box-shadow:0 0 0 2000px #fff;/* here draw the shadow inside its parent , maybe z-index will be required for content */
+}
+
+.cornered-left:before {
+  content:'';
+  overflow: hidden;
+  position:absolute;
+  width:42px;
+  height:42px;
+  top:-21px;
+  right:0px;
+  border-radius:100%;
+  box-shadow:0 0 0 2000px #fff;/* here draw the shadow inside its parent , maybe z-index will be required for content */
+}

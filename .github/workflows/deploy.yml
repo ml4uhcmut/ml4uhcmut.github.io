@@ -1,0 +1,152 @@
+name: Deploy Next.Js to GitHub Pages with Diagnostics
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  PROJECT_DIR: . # Set the root folder here
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          cd ${{ env.PROJECT_DIR }}
+          if [ -f "yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "install-command=install" >> $GITHUB_OUTPUT
+            echo "run-command=yarn" >> $GITHUB_OUTPUT
+          elif [ -f "package-lock.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "install-command=install --force --legacy-peer-deps" >> $GITHUB_OUTPUT
+            echo "run-command=npm" >> $GITHUB_OUTPUT
+          elif [ -f "bun.lockb" ]; then
+            echo "manager=bun" >> $GITHUB_OUTPUT
+            echo "install-command=install" >> $GITHUB_OUTPUT
+            echo "run-command=bun" >> $GITHUB_OUTPUT
+          elif [ -f "pnpm-lock.yaml" ]; then
+            echo "manager=pnpm" >> $GITHUB_OUTPUT
+            echo "install-command=install" >> $GITHUB_OUTPUT
+            echo "run-command=pnpm" >> $GITHUB_OUTPUT
+          else
+            echo "Unable to determine package manager"
+            exit 1
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
+
+      # Log the input structure
+      - name: Inspect project structure
+        run: |
+          echo "==== Project root structure ===="
+          ls -la ${{ env.PROJECT_DIR }}
+
+          echo "==== Public folder structure ===="
+          ls -la ${{ env.PROJECT_DIR }}/public
+
+          echo "==== Public/images folder structure ===="
+          if [ -d "${{ env.PROJECT_DIR }}/public/images" ]; then
+            find ${{ env.PROJECT_DIR }}/public/images -type f | sort
+          else
+            echo "Public/images directory does not exist"
+          fi
+
+          echo "==== Next.js config ===="
+          cat ${{ env.PROJECT_DIR }}/next.config.js
+
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.PROJECT_DIR }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('${{ env.PROJECT_DIR }}/**/package-lock.json', '${{ env.PROJECT_DIR }}/**/yarn.lock', '${{ env.PROJECT_DIR }}/**/bun.lockb') }}-${{ hashFiles('${{ env.PROJECT_DIR }}/**.[jt]s', '${{ env.PROJECT_DIR }}/**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('${{ env.PROJECT_DIR }}/**/package-lock.json', '${{ env.PROJECT_DIR }}/**/yarn.lock', '${{ env.PROJECT_DIR }}/**/bun.lockb') }}-
+
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.run-command }} ${{ steps.detect-package-manager.outputs.install-command }}
+        working-directory: ${{ env.PROJECT_DIR }}
+
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.run-command }} next build
+        working-directory: ${{ env.PROJECT_DIR }}
+
+      # Log the output structure
+      - name: Inspect build output structure
+        run: |
+          echo "==== Out folder structure ===="
+          ls -la ${{ env.PROJECT_DIR }}/out
+
+          echo "==== Complete output directory tree ===="
+          find ${{ env.PROJECT_DIR }}/out -type d | sort
+
+          echo "==== Image files in output ===="
+          find ${{ env.PROJECT_DIR }}/out -type f -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.gif" -o -name "*.avif" -o -name "*.webp" | sort
+
+          echo "==== HTML files in output ===="
+          find ${{ env.PROJECT_DIR }}/out -type f -name "*.html" | sort | head -5
+
+          echo "==== Sample HTML content (first file) ===="
+          FIRST_HTML=$(find ${{ env.PROJECT_DIR }}/out -type f -name "*.html" | head -1)
+          if [ -n "$FIRST_HTML" ]; then
+            grep -A 10 -B 10 "background" $FIRST_HTML || echo "No background references found"
+          fi
+
+      # Try simple copy
+      - name: Copy images to output
+        run: |
+          if [ -d "${{ env.PROJECT_DIR }}/public/images" ]; then
+            echo "Copying images directory to output..."
+            mkdir -p ${{ env.PROJECT_DIR }}/out/images
+            cp -r ${{ env.PROJECT_DIR }}/public/images/* ${{ env.PROJECT_DIR }}/out/images/
+            echo "Copy complete."
+            echo "==== Images in output after copy ===="
+            find ${{ env.PROJECT_DIR }}/out/images -type f | sort
+          else
+            echo "Public/images directory does not exist, skipping copy"
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.PROJECT_DIR }}/out
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

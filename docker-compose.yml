@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  ml4u-app:
+    build:
+      context: .
+      target: development
+    ports:
+      - "3000:3000"
+    # Remove the full volume mount and use selective mounts instead
+    volumes:
+      - /app/node_modules
+      - /app/.next
+    command: yarn dev
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+    develop:
+      watch:
+        - path: ./src/
+          action: sync
+          target: /app/src/
+          ignore:
+            - node_modules/
+        - path: ./public/
+          action: sync
+          target: /app/public/
+        - path: ./content/
+          action: sync
+          target: /app/content/
+        - path: ./_data/
+          action: sync
+          target: /app/_data/
+        - path: ./scripts/
+          action: sync
+          target: /app/scripts/
+        - path: ./tailwind.config.ts
+          action: sync
+          target: /app/tailwind.config.ts
+        - path: ./postcss.config.mjs
+          action: sync
+          target: /app/postcss.config.mjs
+        - path: ./tsconfig.json
+          action: sync
+          target: /app/tsconfig.json
+        - path: ./next.config.ts
+          action: sync
+          target: /app/next.config.ts
+        - path: ./package.json
+          action: rebuild
+        - path: ./yarn.lock
+          action: rebuild
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
