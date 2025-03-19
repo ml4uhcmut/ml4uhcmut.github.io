@@ -12,6 +12,7 @@ links:
   github: hieugiaosu
   linkedin: thehieu1402
   orcid: 0009-0001-4398-7285
+  home-page: https://hieugiaosu.github.io
 ---
 
 ## About Me
