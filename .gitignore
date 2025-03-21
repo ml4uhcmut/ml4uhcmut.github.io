@@ -49,3 +49,4 @@ venv
 _cite
 scripts/citations/__pycache__
 scripts/citations/plugins/__pycache__
+/.idea
