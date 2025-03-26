@@ -149,3 +149,12 @@
 
 - id: doi:10.1109/RIVF60135.2023.10471783
   image: https://github.com/thamquocdung/eCMU/blob/main/static/eCMU.png
+
+- id: doi:10.1007/978-981-96-0692-4_28
+  tags: [paper]
+
+- id: doi:10.1007/978-981-96-0972-7_6
+  tags: [paper]
+
+- id: doi:10.1007/978-981-96-0963-5_3
+  tags: [paper]
