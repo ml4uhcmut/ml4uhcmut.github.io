@@ -684,7 +684,7 @@
   - paper
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.48550/ARXIV.2410.00527
+- id: doi:10.48550/arXiv.2410.00527
   title: 'Wanna Hear Your Voice: Adaptive, Effective, and Language-Agnostic Approach
     in Voice Extraction'
   authors:
