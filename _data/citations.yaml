@@ -638,6 +638,52 @@
   image: https://github.com/thamquocdung/eCMU/blob/main/static/eCMU.png
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.1007/978-981-96-0692-4_28
+  title: 'FrustumVL: Frustum-Based Visual Localization Framework'
+  authors:
+  - Minh Nghia Le
+  - Nhan T. Nguyen
+  - Khai Anh Duy Pham
+  - Duc Dung Nguyen
+  publisher: Lecture Notes in Computer Science
+  date: '2025-01-01'
+  link: https://doi.org/g9bzmk
+  tags:
+  - paper
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-981-96-0972-7_6
+  title: "MonoDSSMs: Efficient Monocular 3D Object Detection with\_Depth-Aware State\
+    \ Space Models"
+  authors:
+  - Kiet Dang Vu
+  - Trung Thai Tran
+  - Duc Dung Nguyen
+  publisher: Lecture Notes in Computer Science
+  date: '2024-12-10'
+  link: https://doi.org/g9bzmm
+  tags:
+  - paper
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/978-981-96-0963-5_3
+  title: "DepthSegNet24: A Label-Free Model for\_Robust Day-Night Depth and\_Semantics"
+  authors:
+  - Phan Thi Huyen Thanh
+  - The Hiep Nguyen
+  - Minh Huy Vu Nguyen
+  - Trung Thai Tran
+  - Tran Vu Pham
+  - Duc Dung Nguyen
+  - Truong Vinh Truong Duy
+  - Natori Naotake
+  publisher: Lecture Notes in Computer Science
+  date: '2024-12-08'
+  link: https://doi.org/g9bzmn
+  tags:
+  - paper
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.48550/ARXIV.2410.00527
   title: 'Wanna Hear Your Voice: Adaptive, Effective, and Language-Agnostic Approach
     in Voice Extraction'
