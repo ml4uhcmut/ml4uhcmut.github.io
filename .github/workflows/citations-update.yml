@@ -69,6 +69,13 @@ jobs:
         with:
           branch: citation-update
           title: Periodic citation update
+      
+      - name: Rebuild github pages
+        if: steps.changed.outputs.files_changed == 'true'
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: "deploy-static-pages"
 
     outputs:
       changed: ${{ steps.changed.outputs.files_changed }}
