@@ -1,7 +1,6 @@
 ---
 title: Upcoming
 author: ML4U team
-image: 
 group: featured
 tag:
   - resource
