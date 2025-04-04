@@ -242,17 +242,6 @@ The Next.js configuration has been customized to:
 - Handle routing for static deployment
 - Ensure all internal links work correctly in the GitHub Pages environment
 
-### Deployment Process
-
-To deploy:
-
-1. Push your changes to the `build/github-page` branch
-2. The GitHub Actions workflow will automatically:
-   - Build the Next.js application
-   - Generate static files using `next export`
-   - Deploy the static files to GitHub Pages
-3. Your site will be available at `https://<username>.github.io/<repository-name>`
-
 ## Additional Information
 
 - The website uses TailwindCSS for styling
