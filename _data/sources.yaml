@@ -155,6 +155,7 @@
 
 - id: doi:10.1007/978-981-96-0972-7_6
   image: https://ml4uhcmut.github.io/images/publications/images/MonoDSSMs.png
+  tags: [paper]
 
 - id: doi:10.1007/978-981-96-0963-5_3
   tags: [paper]
