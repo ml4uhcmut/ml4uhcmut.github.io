@@ -2,7 +2,7 @@
 name: Đặng Ngọc Bảo Trâm
 image: images/members/BaoTram.jpg
 description: graduate in 2026
-role: Member
+role: undergrad
 aliases:
   - Dang Ngoc Bao Tram
   - Bao Tram Dang

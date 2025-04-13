@@ -2,7 +2,7 @@
 name: Nguyễn Trọng Anh
 image: images/members/TrongAnh.jpg
 description: graduate in 2025
-role: Member
+role: undergrad
 aliases:
   - Trong Anh Nguyen
   - Trong-Anh Nguyen

@@ -2,7 +2,7 @@
 name: Đặng Vũ Tuấn Kiệt
 image: images/members/KietDang.jpg
 description: graduate in 2026
-role: Member
+role: undergrad
 aliases:
   - Dang Vu Tuan Kiet
   - Kiet Dang Vu
