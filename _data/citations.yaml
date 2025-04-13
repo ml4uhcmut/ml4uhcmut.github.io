@@ -663,6 +663,8 @@
   date: '2024-12-10'
   link: https://doi.org/g9bzmm
   image: https://ml4uhcmut.github.io/images/publications/images/MonoDSSMs.png
+  tags:
+  - paper
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1007/978-981-96-0963-5_3
