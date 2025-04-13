@@ -154,7 +154,7 @@
   tags: [paper]
 
 - id: doi:10.1007/978-981-96-0972-7_6
-  tags: [paper]
+  image: public/images/publications/images/MonoDSSMs.png
 
 - id: doi:10.1007/978-981-96-0963-5_3
   tags: [paper]
