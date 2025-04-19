@@ -1,8 +1,8 @@
 "use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import logoIcon from "@images/logo.svg";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const PAGE_PATHS = [
   { name: "Home", path: "/" },
@@ -10,6 +10,7 @@ export const PAGE_PATHS = [
   { name: "Projects", path: "/projects" },
   { name: "Team", path: "/team" },
   { name: "Contact", path: "/contact" },
+  { name: "Join Us", path: "/recruit" },
 ];
 
 export default function Sidebar() {
