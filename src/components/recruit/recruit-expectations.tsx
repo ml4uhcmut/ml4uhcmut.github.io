@@ -6,7 +6,7 @@ export default function RecruitExpectations() {
       </h2>
       <div className="bg-green-50 border-l-4 border-green-400 p-6 rounded-lg">
         <p className="mb-2 font-semibold text-lg">Just one thing: Be enthusiastic and eager to learn!</p>
-        <p className="text-gray-700">No prior experience required – we're here to grow together.</p>
+        <p className="text-gray-700">No prior experience required – we&apos;re here to grow together.</p>
       </div>
     </div>
   );
