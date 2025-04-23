@@ -56,8 +56,12 @@ requirements:
 
 application:
   title: "How to Apply"
-  url: "<insert interest form link>"
-  contact_email: "<insert contact email>"
+  content: |
+    If you are interested in joining our lab, please contact us via email. 
+    The title of your email should be "[AITech Lab Application] Your name".
+    Please include a résume with your details.
+  #url: "<insert interest form link>"
+  contact_email: "nddung@hcmut.edu.vn"
   deadline: "31/05/2025"
 ---
 Let's build the future of AI together 💥  
