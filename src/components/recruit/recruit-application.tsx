@@ -23,10 +23,12 @@ export default function RecruitApplication({
       </h2>
       <div className="bg-white shadow-md rounded-lg p-6 border-t-4 border-blue-500">
         <p className="mb-4 text-lg">
-          Fill out the interest form <a href={formLink} className="text-blue-600 underline hover:text-blue-800 transition-colors">{formLink !== "#" ? "here" : "(coming soon)"}</a>
-          {email && (
+          If you are interested in joining our lab, please contact us via email {email && (
             <> or contact <a href={`mailto:${email}`} className="text-blue-600 underline hover:text-blue-800 transition-colors">{email}</a> for more details.</>
-          )}
+          )}. 
+          The title of your email should be "[AITech Lab Application] Your name".
+          Please include a résume with your details.
+          
         </p>
         <div className="font-medium text-lg flex items-center">
           <span className="mr-2">🕒</span> 
