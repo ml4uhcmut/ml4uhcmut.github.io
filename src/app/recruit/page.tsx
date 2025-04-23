@@ -42,7 +42,6 @@ export default function RecruitPage() {
         
         <RecruitApplication 
           title={recruitmentData.application.title}
-          url={recruitmentData.application.url}
           contact_email={recruitmentData.application.contact_email}
           deadline={recruitmentData.application.deadline}
         />
