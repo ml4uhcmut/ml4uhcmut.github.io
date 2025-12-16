@@ -8,6 +8,8 @@ date: "2024-12-16"
 group: normal
 tag:
   - resource
+  - vision
+  - image super-resolution
 ---
 
 <!-- excerpt start -->

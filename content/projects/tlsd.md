@@ -7,6 +7,8 @@ date: "2025-12-16"
 group: normal
 tag:
   - resource
+  - vision
+  - Autonomous driving
 ---
 
 <!-- excerpt start -->

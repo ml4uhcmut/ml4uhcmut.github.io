@@ -17,23 +17,46 @@ export default function ProjectsPage({
   const searchParams = useSearchParams();
   const inputRef = useRef<HTMLInputElement>(null);
   const currentSearch = searchParams.get("search") ?? "";
+  const currentTags = searchParams.get("tags")?.split(",").filter(Boolean) ?? [];
   const currentInputValue = useRef(currentSearch);
   const [selectedIndex, setSelectedIndex] = useState<number>(-1);
+  const [selectedTags, setSelectedTags] = useState<string[]>(currentTags);
   const debouncedUrlUpdate = useDebounce(currentInputValue.current, 300);
 
-  const filteredPublications = useMemo(() => {
-    if (!currentSearch) return projects;
-    const { phrases, terms } = splitQuery(currentSearch);
-
-    return projects.filter((project) => {
-      const searchableText = [
-        project.title,
-        project.author,
-        project.content,
-      ].join(" ");
-      return matchesQuery(searchableText, phrases, terms);
+  // Extract all unique tags from projects
+  const allTags = useMemo(() => {
+    const tags = new Set<string>();
+    projects.forEach((project) => {
+      project.tag.forEach((tag) => tags.add(tag));
     });
-  }, [projects, currentSearch]);
+    return Array.from(tags).sort();
+  }, [projects]);
+
+  const filteredPublications = useMemo(() => {
+    let filtered = projects;
+
+    // Filter by tags
+    if (selectedTags.length > 0) {
+      filtered = filtered.filter((project) =>
+        selectedTags.some((tag) => project.tag.includes(tag))
+      );
+    }
+
+    // Filter by search query
+    if (currentSearch) {
+      const { phrases, terms } = splitQuery(currentSearch);
+      filtered = filtered.filter((project) => {
+        const searchableText = [
+          project.title,
+          project.author,
+          project.content,
+        ].join(" ");
+        return matchesQuery(searchableText, phrases, terms);
+      });
+    }
+
+    return filtered;
+  }, [projects, currentSearch, selectedTags]);
 
   const highlightTerms = useMemo(() => {
     if (!currentSearch) return [];
@@ -54,6 +77,19 @@ export default function ProjectsPage({
     setSelectedIndex(-1);
   };
 
+  const handleTagToggle = (tag: string) => {
+    setSelectedTags((prev) => {
+      const newTags = prev.includes(tag)
+        ? prev.filter((t) => t !== tag)
+        : [...prev, tag];
+      return newTags;
+    });
+  };
+
+  const handleClearTags = () => {
+    setSelectedTags([]);
+  };
+
   useEffect(() => {
     const params = new URLSearchParams(searchParams);
     if (debouncedUrlUpdate) {
@@ -62,10 +98,16 @@ export default function ProjectsPage({
       params.delete("search");
     }
 
+    if (selectedTags.length > 0) {
+      params.set("tags", selectedTags.join(","));
+    } else {
+      params.delete("tags");
+    }
+
     if (params.toString() !== searchParams.toString()) {
       router.replace(`/projects?${params.toString()}`, { scroll: false });
     }
-  }, [debouncedUrlUpdate, router, searchParams]);
+  }, [debouncedUrlUpdate, selectedTags, router, searchParams]);
 
   return (
     <div className="min-h-screen w-full">
@@ -113,12 +155,11 @@ export default function ProjectsPage({
                 </div>
               </div>
 
-              {/* Search bar */}
+              {/* Search bar and tag filters */}
               <div
-                className={`sticky top-0 px-6 z-40 max-w-3xl w-full
+                className={`sticky top-0 px-6 z-40 max-w-4xl w-full
                   transition-all duration-200 ease-linear
                   ${selectedIndex !== -1 ? "opacity-0" : "opacity-100"}
-
                 `}
               >
                 <div className="relative mx-auto">
@@ -132,6 +173,38 @@ export default function ProjectsPage({
                       border border-white/20 rounded-md
                       text-white placeholder-white/50"
                   />
+                </div>
+
+                {/* Tag filters */}
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  <span className="text-white/70 text-sm font-medium">Filter by topic:</span>
+                  {allTags.map((tag) => (
+                    <button
+                      key={tag}
+                      onClick={() => handleTagToggle(tag)}
+                      className={`px-3 py-1 rounded-full text-sm transition-all duration-300 ease-in-out
+                        ${
+                          selectedTags.includes(tag)
+                            ? "bg-white text-black font-medium"
+                            : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
+                        }`}
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                  {selectedTags.length > 0 && (
+                    <button
+                      onClick={handleClearTags}
+                      className="px-3 py-1 rounded-full text-sm bg-red-500/20 text-red-300 hover:bg-red-500/30 transition-all duration-300 ease-in-out"
+                    >
+                      Clear all
+                    </button>
+                  )}
+                </div>
+
+                {/* Results count */}
+                <div className="mt-2 text-white/50 text-sm">
+                  Showing {filteredPublications.length} of {projects.length} projects
                 </div>
               </div>
 

@@ -6,6 +6,8 @@ group: featured
 date: "2024-12-16"
 tag:
   - resource
+  - TTS
+  - speech
 ---
 
 <!-- excerpt start -->

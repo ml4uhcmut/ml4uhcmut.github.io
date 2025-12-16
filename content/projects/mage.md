@@ -7,6 +7,8 @@ date: "2025-12-16"
 group: normal
 tag:
   - resource
+  - speech
+  - speech enhancement
 ---
 
 <!-- excerpt start -->

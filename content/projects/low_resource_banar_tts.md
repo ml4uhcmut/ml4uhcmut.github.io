@@ -8,6 +8,8 @@ group: normal
 date: "2024-12-16"
 tag:
   - resource
+  - speech
+  - TTS
 ---
 
 <!-- excerpt start -->
