@@ -5,11 +5,13 @@ import { ContentParser } from './md-parser';
 const BaseProjectSchema = z.object({
   title: z.string(),
   author: z.string(),
+  date: z.string().optional(),
   image: z.string().optional(),
   group: z.enum(['normal', 'featured']),
   tag: z.array(z.string()),
   links: z.string().optional().nullable(),
   github: z.string().optional(),
+  embed: z.string().optional(),
   body: z.string(),
   id: z.string()
 });
@@ -67,7 +69,14 @@ export const getProjects = async (): Promise<Project[]> => {
   );
 
   const baseProjects = await parser.parse();
-  return baseProjects.map(processProjectContent);
+  const projects = baseProjects.map(processProjectContent);
+  
+  // Sort by date (most recent first)
+  return projects.sort((a, b) => {
+    const dateA = a.date ? new Date(a.date).getTime() : 0;
+    const dateB = b.date ? new Date(b.date).getTime() : 0;
+    return dateB - dateA;
+  });
 };
 
 /**

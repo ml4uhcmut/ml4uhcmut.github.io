@@ -3,6 +3,7 @@ title: Light-weight Approach for Super Resolution
 author: Duc Phuc Nguyen, Khanh Hung Vu, Duc Dung Nguyen, Hoang-Anh Pham
 image: images/projects/IEEEAccess-F2SRGAN.png
 links: ieeexplore.ieee.org/document/10077589
+date: "2024-12-16"
 #  github: github.com/signofthefour
 group: normal
 tag:

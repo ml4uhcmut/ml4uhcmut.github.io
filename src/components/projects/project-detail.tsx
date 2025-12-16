@@ -148,13 +148,48 @@ export default function ProjectDetailOverlay({
                 <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-white mb-4">
                   {currentProject.title}
                 </h1>
-                <div className="text-white/60 mb-8">
+                <div className="text-white/60 mb-4 flex items-center justify-between">
                   <p>By {currentProject.author}</p>
+                  {currentProject.embed && (
+                    <a
+                      href={currentProject.embed}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white hover:text-black text-white rounded-md transition-all duration-300 ease-in-out border border-white/20 hover:border-white"
+                    >
+                      <span className="text-sm font-medium">Open in New Tab</span>
+                      <svg
+                        className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                    </a>
+                  )}
                 </div>
 
                 <div className="prose prose-lg prose-invert max-w-none text-white/90">
-                  <p className="mb-2">{currentProject.description}</p>
-                  <Markdown>{currentProject.content}</Markdown>
+                  <p className="mb-4">{currentProject.description}</p>
+                  {currentProject.embed ? (
+                    <div className="w-full min-h-[calc(100vh-300px)] h-[1200px] rounded-lg overflow-hidden border border-white/20 shadow-2xl">
+                      <iframe
+                        src={currentProject.embed}
+                        className="w-full h-full border-0"
+                        title={currentProject.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  ) : (
+                    <Markdown>{currentProject.content}</Markdown>
+                  )}
                 </div>
               </div>
             </motion.div>

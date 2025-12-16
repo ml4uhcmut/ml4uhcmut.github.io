@@ -3,6 +3,7 @@ title: Vietnamese Text-to-Speech System
 author: Minh dai ca
 image: images/projects/MIWAI19-TTS.png
 group: featured
+date: "2024-12-16"
 tag:
   - resource
 ---

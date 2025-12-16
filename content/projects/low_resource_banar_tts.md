@@ -5,6 +5,7 @@ image: images/projects/low_resource_bahnar_tts.png
 links:
 github: github.com/signofthefour
 group: normal
+date: "2024-12-16"
 tag:
   - resource
 ---

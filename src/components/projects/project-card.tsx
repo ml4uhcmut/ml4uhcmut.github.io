@@ -51,10 +51,12 @@ export default function ProjectCard({
           "
         >
           <div className=" flex items-center flex-wrap gap-2 text-xs  py-2 px-4 ">
-            <p className="text-black  flex items-center gap-1">
-              <Image src={dateIcon} alt="date" width={16} height={16} />
-              <span>{new Date().toISOString().split("T")[0]}</span>
-            </p>
+            {project.date && (
+              <p className="text-black  flex items-center gap-1">
+                <Image src={dateIcon} alt="date" width={16} height={16} />
+                <span>{project.date}</span>
+              </p>
+            )}
             <p className="text-black  flex items-center gap-1">
               <Image src={authorIcon} alt="author" width={16} height={16} />
               <span className="text-ellipsis line-clamp-1">
