@@ -685,6 +685,19 @@
   - paper
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.1007/978-981-95-4957-3_20
+  title: "DPDiff: Blind Image Inpainting with\_Dual-Prior Diffusion"
+  authors:
+  - Hoai Trung Nguyen
+  - Trong Nhan Ho
+  - Duc Dung Nguyen
+  publisher: Lecture Notes in Computer Science
+  date: '2025-12-02'
+  link: https://doi.org/hbftsh
+  tags:
+  - paper
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.48550/arXiv.2410.00527
   title: 'Wanna Hear Your Voice: Adaptive, Effective, and Language-Agnostic Approach
     in Voice Extraction'
