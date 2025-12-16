@@ -717,3 +717,17 @@
   plugin: cite_arxiv.py
   file: arxivSources.yaml
   publisher: Arxiv Preprint
+- id: doi:10.48550/arXiv.2509.19881
+  title: 'MAGE: A Coarse-to-Fine Speech Enhancer with Masked Generative Model'
+  authors:
+  - The Hieu Pham
+  - Tan Dat Nguyen
+  - Phuong Thanh Tran Nguyen
+  - Joon Son Chung
+  - Duc Dung Nguyen
+  date: '2025-09-25'
+  link: https://arxiv.org/abs/2509.19881
+  image: https://arxiv.org/html/2509.19881v2/x2.png
+  plugin: cite_arxiv.py
+  file: arxivSources.yaml
+  publisher: Arxiv Preprint
