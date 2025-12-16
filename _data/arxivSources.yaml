@@ -23,3 +23,15 @@
   date: "2024-09-13"
   link: https://arxiv.org/pdf/2408.11559
   image: https://arxiv.org/html/2408.11559v2/x1.png
+
+- id: doi:10.48550/arXiv.2509.19881
+  title: "MAGE: A Coarse-to-Fine Speech Enhancer with Masked Generative Model"
+  authors:
+    - The Hieu Pham
+    - Tan Dat Nguyen
+    - Phuong Thanh Tran Nguyen
+    - Joon Son Chung
+    - Duc Dung Nguyen
+  date: "2024-10-03"
+  link: https://arxiv.org/abs/2509.19881
+  image: https://arxiv.org/html/2509.19881v2/x2.png
