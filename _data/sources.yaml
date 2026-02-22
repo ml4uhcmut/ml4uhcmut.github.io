@@ -168,3 +168,10 @@
 
 - id: doi:10.1007/978-981-95-4957-3_20
   tags: [paper]
+
+- id: doi:10.1609/aaai.v39i6.32698
+  tags: [paper]
+  image: https://arxiv.org/html/2408.11559v4/x2.png
+
+
+
