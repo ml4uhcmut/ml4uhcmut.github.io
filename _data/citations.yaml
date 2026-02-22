@@ -698,6 +698,25 @@
   - paper
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.1609/aaai.v39i6.32698
+  title: Semi-supervised 3D Semantic Scene Completion with 2D Vision Foundation Model
+    Guidance
+  authors:
+  - Duc-Hai Pham
+  - Duc-Dung Nguyen
+  - Anh Pham
+  - Tuan Ho
+  - Phong Nguyen
+  - Khoi Nguyen
+  - Rang Nguyen
+  publisher: Proceedings of the AAAI Conference on Artificial Intelligence
+  date: '2025-04-11'
+  link: https://doi.org/hbp73c
+  tags:
+  - paper
+  image: https://arxiv.org/html/2408.11559v4/x2.png
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.48550/arXiv.2410.00527
   title: 'Wanna Hear Your Voice: Adaptive, Effective, and Language-Agnostic Approach
     in Voice Extraction'
