@@ -11,7 +11,7 @@ export default function RecruitPage() {
   const recruitmentData = getRecruitmentData();
   
   return (
-    <main className="relative z-10 min-h-screen w-full overflow-hidden bg-slate-50 pb-20 pt-[60px]">
+    <main className="relative z-10 min-h-screen w-full self-start overflow-x-clip bg-slate-50 pb-20 pt-[60px]">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[520px] bg-gradient-to-br from-slate-950 via-blue-950 to-blue-700" />
       <div className="pointer-events-none absolute -right-24 top-28 h-80 w-80 rounded-full bg-cyan-400/20 blur-3xl" />
       <div className="relative mx-auto max-w-6xl px-4 py-8 md:px-8 md:py-14">
