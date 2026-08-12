@@ -31,18 +31,18 @@ export default function RecruitFooter({ content }: RecruitFooterProps) {
   }
 
   return (
-    <div className="text-center border-t pt-8">
-      <div className="prose mx-auto max-w-none">
+    <footer className="text-center">
+      <div className="prose prose-slate mx-auto max-w-none prose-a:font-semibold prose-a:text-blue-600">
         <Markdown>{mainContent}</Markdown>
       </div>
       
       {hashtags.length > 0 && (
-        <div className="flex flex-wrap justify-center gap-2 mt-4 text-sm text-gray-600">
+        <div className="mt-5 flex flex-wrap justify-center gap-2 text-xs font-semibold text-slate-500">
           {hashtags.map((tag, idx) => (
-            <span key={idx} className="px-2 py-1 bg-gray-100 rounded-full">#{tag}</span>
+            <span key={idx} className="rounded-full border border-slate-200 bg-white px-3 py-1.5">#{tag}</span>
           ))}
         </div>
       )}
-    </div>
+    </footer>
   );
 }

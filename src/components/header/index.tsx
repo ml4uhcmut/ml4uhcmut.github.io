@@ -15,6 +15,7 @@ export const PAGE_PATHS = [
 
 export default function Sidebar() {
   const pathName = usePathname();
+  const currentYear = new Date().getFullYear();
 
   return (
     <div
@@ -27,7 +28,7 @@ export default function Sidebar() {
         <Image src={logoIcon} alt="logo" width={30} height={30} />
         <div>
           <p className="leading-none font-semibold text-white text-xs">
-            HCMUT - 2025
+            HCMUT - {currentYear}
           </p>
           <div className="text-white text-xl font-semibold tracking-tighter">
             AI Tech Lab

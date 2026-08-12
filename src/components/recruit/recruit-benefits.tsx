@@ -7,20 +7,19 @@ interface RecruitBenefitsProps {
 
 export default function RecruitBenefits({ title, items }: RecruitBenefitsProps) {
   return (
-    <div className="mb-12">
-      <h2 className="text-2xl font-bold mb-4 text-blue-600">
-        {title}
-      </h2>
-      <ul className="space-y-4">
+    <section className="h-full rounded-3xl bg-blue-950 p-6 text-white shadow-lg md:p-8">
+      <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-300">Why ML4U</p>
+      <h2 className="mt-2 text-2xl font-black">{title}</h2>
+      <ul className="mt-6 space-y-3">
         {items.map((benefit, idx) => (
-          <li key={idx} className="flex items-start bg-white p-4 rounded-lg shadow-sm">
-            <span className="text-blue-500 text-xl mr-3 mt-0.5">•</span>
-            <div className="prose">
+          <li key={idx} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-300 text-sm font-black text-blue-950">✓</span>
+            <div className="prose prose-sm prose-invert m-0 max-w-none">
               <Markdown>{benefit}</Markdown>
             </div>
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

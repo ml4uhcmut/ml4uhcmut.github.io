@@ -1,6 +1,6 @@
 ---
 heading:
-  title: "🎉 RECRUITMENT 2025 – AI Tech Lab (ML4U) @ HCMUT 🎉"
+  title: "🎉 RECRUITMENT {{currentYear}} – AI Tech Lab (ML4U) @ HCMUT 🎉"
   description: "Are you passionate about AI, Speech, or Computer Vision? Want to kickstart your research journey in a supportive and collaborative environment? This is your chance!"
 
 about:
@@ -62,7 +62,7 @@ application:
     Please include a résume with your details.
   #url: "<insert interest form link>"
   contact_email: "nddung@hcmut.edu.vn"
-  deadline: "31/05/2025"
+  deadline: "Open until filled"
 ---
 Let's build the future of AI together 💥  
 🔗 Visit us: https://ml4uhcmut.github.io  
