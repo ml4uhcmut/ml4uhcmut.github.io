@@ -134,49 +134,36 @@ export default function ResearchList({ publications }: Props) {
           {/* Publication summary */}
           <section
             aria-labelledby="publication-summary-title"
-            className="mx-auto mt-2 max-w-6xl overflow-hidden rounded-2xl border border-white/20 bg-black/55 text-white shadow-xl backdrop-blur-md"
+            className="mx-auto mt-2 max-w-6xl rounded-2xl border border-white/30 bg-white/95 p-5 text-slate-900 shadow-lg backdrop-blur-md"
           >
-            <div className="flex flex-col gap-4 border-b border-white/10 px-5 py-5 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-200">
-                  Publication dashboard
-                </p>
-                <h2 id="publication-summary-title" className="mt-1 text-xl font-bold">
-                  Our research at a glance
-                </h2>
-              </div>
-              <div className="flex gap-3">
-                <div className="min-w-24 rounded-xl bg-white/10 px-4 py-3 text-center">
-                  <div className="text-2xl font-bold">{publicationSummary.total}</div>
-                  <div className="text-xs text-white/60">
-                    {currentSearch ? "matching papers" : "total papers"}
-                  </div>
-                </div>
-                <div className="min-w-24 rounded-xl bg-blue-500/20 px-4 py-3 text-center">
-                  <div className="text-2xl font-bold text-blue-100">
-                    {publicationSummary.venues.length}
-                  </div>
-                  <div className="text-xs text-white/60">venues</div>
-                </div>
-              </div>
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h2 id="publication-summary-title" className="font-semibold">
+                {currentSearch ? "Search summary" : "Publication summary"}
+              </h2>
+              <p className="text-sm text-slate-500">
+                <strong className="text-xl text-blue-700">{publicationSummary.total}</strong>{" "}
+                {publicationSummary.total === 1 ? "paper" : "papers"} across{" "}
+                <strong className="text-slate-700">{publicationSummary.venues.length}</strong>{" "}
+                {publicationSummary.venues.length === 1 ? "venue" : "venues"}
+              </p>
             </div>
 
             {publicationSummary.venues.length > 0 ? (
-              <div className="grid max-h-72 grid-cols-1 gap-px overflow-y-auto bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-4 flex flex-wrap gap-2">
                 {publicationSummary.venues.map(([venue, count]) => (
                   <div
                     key={venue}
-                    className="flex items-center justify-between gap-4 bg-slate-950/80 px-5 py-3 transition-colors hover:bg-blue-950/80"
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 py-1.5 pl-3 pr-1.5 text-sm text-slate-700"
                   >
-                    <span className="text-sm leading-5 text-white/85">{venue}</span>
-                    <span className="flex h-7 min-w-7 shrink-0 items-center justify-center rounded-full bg-blue-500/25 px-2 text-xs font-bold text-blue-100">
+                    <span>{venue}</span>
+                    <span className="flex h-6 min-w-6 items-center justify-center rounded-full bg-blue-100 px-1.5 text-xs font-bold text-blue-700">
                       {count}
                     </span>
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="px-5 py-8 text-center text-sm text-white/60">
+              <p className="py-4 text-center text-sm text-slate-500">
                 No publications match this search.
               </p>
             )}

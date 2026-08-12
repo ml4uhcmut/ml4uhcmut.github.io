@@ -10,7 +10,9 @@ def load_arxiv_cite():
     for arxiv in arxiv_cite:
         arxiv['plugin'] = 'cite_arxiv.py'
         arxiv['file'] = 'arxivSources.yaml'
-        arxiv['publisher'] = "Arxiv Preprint"
+        # Keep a confirmed conference or journal venue when the source provides
+        # one, and use the preprint label only as a fallback.
+        arxiv.setdefault('publisher', "Arxiv Preprint")
 
     return arxiv_cite
 

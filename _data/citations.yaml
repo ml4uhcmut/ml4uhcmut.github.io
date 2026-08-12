@@ -760,6 +760,6 @@
   date: '2025-09-25'
   link: https://arxiv.org/abs/2509.19881
   image: https://arxiv.org/html/2509.19881v2/x2.png
-  publisher: Arxiv Preprint
+  publisher: 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
   plugin: cite_arxiv.py
   file: arxivSources.yaml
