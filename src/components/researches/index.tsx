@@ -149,14 +149,14 @@ export default function ResearchList({ publications }: Props) {
             </div>
 
             {publicationSummary.venues.length > 0 ? (
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="mt-4 grid gap-px overflow-hidden rounded-xl border border-slate-200 bg-slate-200 sm:grid-cols-2 lg:grid-cols-3">
                 {publicationSummary.venues.map(([venue, count]) => (
                   <div
                     key={venue}
-                    className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 py-1.5 pl-3 pr-1.5 text-sm text-slate-700"
+                    className="flex items-center justify-between gap-4 bg-slate-50 px-4 py-3 text-sm text-slate-700 transition-colors hover:bg-blue-50"
                   >
                     <span>{venue}</span>
-                    <span className="flex h-6 min-w-6 items-center justify-center rounded-full bg-blue-100 px-1.5 text-xs font-bold text-blue-700">
+                    <span className="flex h-7 min-w-7 shrink-0 items-center justify-center rounded-md bg-blue-100 px-2 text-xs font-bold text-blue-700">
                       {count}
                     </span>
                   </div>
