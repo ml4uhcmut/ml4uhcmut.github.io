@@ -2,7 +2,7 @@
 name: The Hieu Pham
 image: images/members/pthieu.jpg
 description: Member at AITech Lab
-role: master student
+role: alumni
 aliases:
   - The Hieu Pham
   - Hieu The Pham
